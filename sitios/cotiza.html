@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cotiza</title>
+<link href="../css/main.css" rel="stylesheet"/>
+<link href="../css/responsive.css" rel="stylesheet"/></head>
+<body class="container__body__servicios">
+<div class="hero__section">
+<header class="header__cotiza">
+<div class="container__titulo__cotiza">
+<h1>
+<a href="../index.html">NOVA SEGUROS</a>
+</h1>
+</div>
+<nav class="container__narvar__cotiza">
+<ul>
+<li>
+<a href="../index.html">Inicio</a>
+</li>
+<li>
+<a class="container__narvar__servicios" href="servicios.html">Servicios</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class="main__cotizador">
+<div class="container__cotizador">
+<section class="container__cotizador__presentacion">
+<h2>Cotizador</h2>
+<p>Obten una cotización rápida<br/> siguiendo unos sencillos pasos</p>
+</section>
+<section class="container__cotizador__monto">
+<form id="formCotizador">
+<div class="container_drop">
+<label for="opciones">Tipo de Seguro:</label>
+<select id="opciones" name="opciones">
+<option value="">Seleccionar...</option>
+<option value="auto">Auto</option>
+<option value="hogar">Hogar</option>
+<option value="vida">Vida</option>
+<option value="negocio">Negocio</option>
+<option value="viaje">Viajes</option>
+</select>
+</div>
+<dic class="container__cotizacion">
+<div class="container_monto">
+<label for="monto">Monto a asegurar:</label>
+<input class="monto-numerico" id="monto" min="0" name="monto" step="1000" type="number"/>
+</div>
+<div class="container_btnCalcular">
+<button id="btnCalcular" type="submit">Calcular</button>
+</div>
+</dic>
+</form>
+</section>
+</div>
+</main>
+</div>
+<footer class="container__footer">
+<div>
+<h3>
+<a class="container__titulo_footer" href="index.html">@ NOVA SEGUROS</a>
+</h3>
+</div>
+</footer>
+</body>
+</html>
