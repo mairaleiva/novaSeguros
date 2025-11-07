@@ -1,23 +1,15 @@
-/* Responsive helpers for Nova Seguros
-   - Mobile-first design
-   - Fluid images, responsive typography
-   - Utility container and grid
-   - Breakpoints: 576, 768, 992, 1200px
-*/
 
 :root{
   --container-max: 1200px;
   --gutter: 16px;
 }
 
-/* Reset-ish */
 *{box-sizing:border-box}
 img{max-width:100%;height:auto}
 iframe,video{max-width:100%}
 table{width:100%;border-collapse:collapse}
 input,select,textarea,button{max-width:100%}
 
-/* Layout containers */
 .container{
   width:100%;
   margin-inline:auto;
@@ -68,7 +60,6 @@ html{font-size:16px}
 /* Images inside cards/sections */
 .card img{display:block;width:100%;object-fit:cover}
 
-/* Forms */
 .form-row{display:flex;flex-wrap:wrap;gap:12px}
 .form-row .form-group{flex:1 1 300px;min-width:220px}
 label{display:block;margin-bottom:4px}
@@ -76,7 +67,6 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   width:100%;padding:10px;border:1px solid #d1d5db;border-radius:8px;
 }
 
-/* Tables: scroll on small screens */
 .table-responsive{width:100%;overflow-x:auto}
 .table{width:100%;border-collapse:collapse}
 .table th, .table td{padding:10px;border-bottom:1px solid #e5e7eb}
@@ -90,18 +80,14 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 .p-4{padding:1rem}
 .text-center{text-align:center}
 
-/* Hero/headers: ensure padding collapses on mobile */
 .hero{padding:2rem 0}
 @media (min-width:768px){
   .hero{padding:4rem 0}
 }
 
-/* Footer stacks on mobile */
 .footer{display:flex;flex-wrap:wrap;gap:16px}
 .footer > * {flex:1 1 200px}
 
-/* Make any fixed-width elements shrink nicely */
 [class*="col-"], [class^="col-"], .sidebar, .content{min-width:0}
 
-/* Buttons should wrap text */
 button, .btn{white-space:normal}
